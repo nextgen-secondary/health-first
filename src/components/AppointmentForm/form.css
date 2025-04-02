@@ -1,0 +1,14 @@
+.form-control{
+    font-size: 20px !important;
+}
+
+/* Remove border radius and focus outline for DatePicker */
+.form-control.custom-datepicker {
+    border-radius: 0; /* Remove border radius */
+    outline: none; /* Remove focus outline */
+}
+
+.form-control.custom-datepicker:focus {
+    outline: none; /* Ensure no focus outline appears */
+    box-shadow: none; /* Remove any focus shadow */
+}
