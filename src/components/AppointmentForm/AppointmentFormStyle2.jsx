@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
-import './form.css';
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import "./form.css";
 
 export default function AppointmentFormStyle2() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -31,8 +31,17 @@ export default function AppointmentFormStyle2() {
           <img src="/images/home_4/appointment_icon_2.svg" alt="Icon" />
         </div>
         <div className="cs_appointment_form_field_right">
-          <label>Specialization</label>
-          <input type="text" placeholder="Department" />
+          {/* <label>Specialization</label>
+          <input type="text" placeholder="Department" /> */}
+          <select className="selectpicker" name="specialization">
+            <option value="0">Specialization</option>
+            <option value="1">Emergency</option>
+            <option value="2">Gynecology</option>
+            <option value="3">Neurology</option>
+            <option value="4">Pediatric</option>
+            <option value="4">Cardiology</option>
+            <option value="4">Psychiatry</option>
+          </select>
         </div>
       </div>
       <div className="cs_appointment_form_field">

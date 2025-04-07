@@ -12,3 +12,7 @@
     outline: none; /* Ensure no focus outline appears */
     box-shadow: none; /* Remove any focus shadow */
 }
+
+.cs_appointment_form_field_right{
+    outline: 1px solid #a96262;
+}
